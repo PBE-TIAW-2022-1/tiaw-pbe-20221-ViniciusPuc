@@ -1,21 +1,20 @@
 # Informações do Projeto
 `TÍTULO DO PROJETO`  
 
-......  COLOQUE AQUI O SEU TEXTO ......
+Guia de Serviços - CALL WORK
 
 `CURSO` 
 
-......  COLOQUE AQUI O SEU TEXTO ......
+Sistema de Informação - PUC Minas
 
 ## Participantes
 
-......  COLOQUE AQUI O SEU TEXTO ......
-
-> Inclua a lista dos membros da equipe com seus nomes completos.
->
-> Os membros do grupo são: 
-> - Fulano da Silva
-> - Ciclano Albuquerque
+* Arthur
+* Gustavo
+* Ítalo
+* Matheus Henrique De Souza Oliveira
+* Pâmella
+* Vinicius Liberio Gomes de Lacerda
 
 # Estrutura do Documento
 
@@ -76,7 +75,7 @@
 
 ## Objetivos
 
-......  COLOQUE AQUI O SEU TEXTO ......
+Desde sempre, muitas pessoas necessitaram de outras para a realização de tarefas que não conseguiram concluir, muitas vezes por falta de tempo ou conhecimento. Com o passar do tempo as formas comuns de freelancers procurarem emprego estão se tornando obsoletas e as pessoas passaram a ter dificuldades em encontra-los.
 
 > Aqui você deve descrever os objetivos do trabalho indicando que o
 > objetivo geral é desenvolver um software para solucionar o problema
@@ -89,7 +88,9 @@
 
 ## Justificativa
 
-......  COLOQUE AQUI O SEU TEXTO ......
+Com as dificuldades em encontrar um bom profissional ou até um bom serviço, nasceu o projeto CALL WORK que tem uma proposta de facilitar e conciliar
+o contato entre o contratante e o profissional, funcionando como um
+guia de serviços, no qual o site serve para encontrar e divulgar trabalhos.
 
 > Descreva a importância ou a motivação para trabalhar com esta aplicação
 > que você escolheu. Indique as razões pelas quais você escolheu seus
@@ -105,7 +106,10 @@
 
 ## Público-Alvo
 
-......  COLOQUE AQUI O SEU TEXTO ......
+Inicialmente, as vagas, além dos contratantes, serão focadas para servidores autônomos de baixa
+especialização, disponibilizando tarefas como: eletricista, diarista, encanador,
+jardineiro, babá, entre outros. Com o intuito facilitar e conciliar
+o contato entre o contratante e o profissional
 
 > Descreva quem serão as pessoas que usarão a sua aplicação indicando os
 > diferentes perfis. O objetivo aqui não é definir quem serão os
