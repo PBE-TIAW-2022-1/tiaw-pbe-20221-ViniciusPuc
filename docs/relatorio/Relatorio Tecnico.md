@@ -256,17 +256,20 @@ Na questão dos issues, nosso projeto usa as seguintes etiquetas:
 # Referências
 
 Contexto do Projeto:
+
 O QUE É GLOBALIZAÇÃO DO PONTO DE VISTA DA GEOGRAFIA. Brasil Escola, 2017. Disponível em: https://meuartigo.brasilescola.uol.com.br/educacao/o-que-e-globalizacao-do-ponto-de-vista-da-geografia.htm. Acessado em: 24/03/2022.
 Revolução Industrial e Sociedade de Consumo em Massa. Fundação Perseu Abramo, 2014. Disponível em: https://fpabramo.org.br/2014/04/08/revolucao-industrial-e-sociedade-de-consumo-em-massa/. Acessado em: 24/03/2022.
 Aristoteles. Ebiografia, 2021. Disponível em: https://www.ebiografia.com/aristoteles/. Acessado em: 24/03/2022. 
 
 Especificação do Projeto:
+
 Histórias de usuários com exemplos e um template. Atlassian, 2019. Disponível em: https://www.atlassian.com/br/agile/project-management/user-stories. Acessado em: 28/03/2022. 
 Santos, Larissa. Como escrever boas histórias de usuário (User Stories). Medium, 2017. Disponível em: https://medium.com/vertice/como-escrever-boas-users-stories-hist%C3%B3rias-de-usu%C3%A1rios-b29c75043fac. Acessado em: 28/03/2022.
 O que são Requisitos Funcionais e Requisitos Não Funcionais. Codificar, 2021. Disponível em: https://codificar.com.br/requisitos-funcionais-nao-funcionais/. Acessado em: 28/03/2022.
 O que são Requisitos Funcionais e Não Funcionais. Analise de requisitos, 2021. https://analisederequisitos.com.br/requisitos-funcionais-e-nao-funcionais/. Acessado em: 28/03/2022.
 
 Projeto de interface:  
+
 Workana LLC. Disponível em: https://www.workana.com/. Acessado em: 2022.
 Freelancer. Disponível em: https://www.br.freelancer.com/. Acessado em: 2022. 
 99Freelas. Disponível em: https://www.99freelas.com.br/. Acessado em: 2022.
