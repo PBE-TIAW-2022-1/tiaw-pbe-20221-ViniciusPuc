@@ -6,11 +6,11 @@ trabalhos e conciliando o contato entre fornecedor e empregado.
 
 ## Alunos integrantes da equipe
 
-* Arthur
-* Gustavo
-* Ítalo
+* Arthur Henrique da Silva Proença
+* Gustavo Henrique de Moura Luz
+* Ítalo Braga
 * Matheus Henrique De Souza Oliveira
-* Pâmella
+* Pâmella Almeida
 * Vinicius Liberio Gomes de Lacerda
 
 ## Professores responsáveis
