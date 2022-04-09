@@ -147,7 +147,6 @@ As tabelas que se seguem apresentam os requisitos funcionais e não funcionais q
 |RF-011| Localizar colaboradores                         | MÉDIA |
 |RF-012| Localizar solicitantes                          | MÉDIA |
 |RF-013| Suporte ao usuário                              | ALTA  |
-|------|-------------------------------------------------|-------|
 
 
 ### Requisitos não Funcionais
@@ -163,7 +162,6 @@ As tabelas que se seguem apresentam os requisitos funcionais e não funcionais q
 |RNF-007| Design e layout intuitivo                                                      |  BAIXA |
 |RNF-008| Contratação de apenas um colaborador por serviço                               |  MÉDIA |
 |RNF-009| Os navegadores suportados serão: Chrome, Firefox, Safari e Microsoft Edge      |  BAIXA |
-|-------|--------------------------------------------------------------------------------|--------|
 
 
 ## Restrições
@@ -177,7 +175,6 @@ O projeto está restrito pelos itens apresentados na tabela a seguir.
 |03| Somente atividades que não exigem alto nível de especialização |
 |04| Será permitida a associação de apenas 1 colaborador por serviço|
 |05| A interface do sistema deve ser web                            |
-|--|----------------------------------------------------------------|
 
 
 # Projeto de Interface
@@ -188,22 +185,22 @@ criadas pensando em nos requisitos necessários.
 
 ## User Flow
 
-![UserFlow](images/Userflow.jpg)
+![UserFlow](images/Userflow.png)
 
 
 ## Wireframes
 
-![Wireframe HomePage](images/wireframes/HomePage.png)
+![Wireframe HomePage](images/wireframes/home.png)
 
 ![Wireframe Login](images/wireframes/login.png)
 
-![Wireframe Signin](images/wireframes/signin.png)
+![Wireframe Signin](images/wireframes/signup.png)
 
 ![Wireframe User](images/wireframes/user.png)
 
 ![Wireframe Admin](images/wireframes/admin.png)
 
-![Wireframe Jobs](images/wireframes/Jobs.png)
+![Wireframe Jobs](images/wireframes/jobs.png)
 
 
 # Metodologia
@@ -248,7 +245,7 @@ Slide (Ítalo, Arthur)
 
 Artefatos do Design Thinking (Em grupo)
   Organização de ideias afim de auxiliar na tomada de decisões.
-  
+
 
 ## Ferramentas
 
