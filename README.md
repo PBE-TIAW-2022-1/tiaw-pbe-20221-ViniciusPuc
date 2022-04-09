@@ -8,7 +8,7 @@ trabalhos e conciliando o contato entre fornecedor e empregado.
 
 * Arthur Henrique da Silva Proença
 * Gustavo Henrique de Moura Luz
-* Ítalo Braga
+* Ítalo Braga Perdigão
 * Matheus Henrique De Souza Oliveira
 * Pâmella Almeida
 * Vinicius Liberio Gomes de Lacerda

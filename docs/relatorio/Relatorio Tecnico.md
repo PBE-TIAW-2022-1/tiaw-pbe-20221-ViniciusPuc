@@ -11,7 +11,7 @@ Sistemas de Informação - PUC Minas
 
 * Arthur Henrique da Silva Proença
 * Gustavo Henrique de Moura Luz
-* Ítalo Braga
+* Ítalo Braga Perdigão
 * Matheus Henrique de Souza Oliveira
 * Pâmella Almeida
 * Vinicius Liberio Gomes de Lacerda
