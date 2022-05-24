@@ -58,7 +58,7 @@ guia de serviços, no qual o site serve para encontrar e divulgar trabalhos.
 ## Público-Alvo
 
 Inicialmente, as vagas, além dos contratantes, serão focadas para servidores autônomos de baixa
-especialização, disponibilizando tarefas como: eletricista, diarista, encanador,
+especialização com idade maior que 18 anos, disponibilizando tarefas como: eletricista, diarista, encanador,
 jardineiro, babá, entre outros. Com o intuito facilitar e conciliar
 o contato entre o contratante e o profissional
 
@@ -71,11 +71,17 @@ requisitos funcionais e não funcionais, e restrições de projeto.
 ## Personas e Mapas de Empatia
 
 De acordo com as entrevistas qualitativas, pôde-se gerar mapas de empatia que auxiliaram na criação da persona
-de uma pessoa profissional que pode resolver qualquer problema que possa vier acontecer em suas atividades diárias.
+de uma pessoa profissional que pode resolver qualquer problema que possa vir acontecer em suas atividades diárias.
 
 ![Mapa de empatia](imaages/../images/mapaempatia.jpg)
 
-![Persona](imaages/../images/Persona1.jpg)
+Personas de profissionais
+![Persona](imaages/../images/Personas/Persona1.jpg)
+![Persona](imaages/../images/Personas/persona2.jpg)
+
+Personas de empregadores
+![Persona](imaages/../images/Personas/persona3.jpg)
+![Persona](imaages/../images/Personas/persona4.jpg)
 
 ## Histórias de Usuários
 

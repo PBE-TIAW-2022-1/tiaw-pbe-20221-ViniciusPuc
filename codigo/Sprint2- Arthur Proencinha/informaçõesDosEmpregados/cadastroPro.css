@@ -1,0 +1,13 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#tela {
+    background-color: rgb(87, 89, 138);
+}
+#formContatos button{
+    margin: 5px;
+}
+#formContatos input{
+    margin: 5px;
+}
