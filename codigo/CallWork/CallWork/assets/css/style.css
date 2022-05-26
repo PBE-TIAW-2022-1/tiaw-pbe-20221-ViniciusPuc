@@ -665,7 +665,7 @@ section div .about-extra a{
 /* Box Serviços */
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Bree+Serif&family=EB+Garamond:ital,wght@0,500;1,800&display=swap');
 
-#containers{
+.containers{
 	box-shadow: 0 15px 30px 1px grey;
 	background: rgba(255, 255, 255, 0.90);
 	text-align: center;
@@ -686,7 +686,7 @@ section div .about-extra a{
 	width: 100%;
 
 }
-#containers .product-details h1{
+.containers .product-details h1{
 	font-family: "Montserrat", sans-serif;
 	display: inline-block;
 	position: relative;
@@ -702,7 +702,7 @@ section div .about-extra a{
 	color: gold;
 	width: 50%;
 }
-#containers .product-details > p {
+.containers .product-details > p {
 font-family: 'EB Garamond', serif;
 	text-align: left;
 	font-size: 18px;

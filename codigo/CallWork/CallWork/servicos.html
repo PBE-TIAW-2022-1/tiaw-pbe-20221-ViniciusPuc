@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 
 <head>
   <meta charset="utf-8">
@@ -26,9 +26,7 @@
 
   <!-- CSS -->
   <link href="assets/css/style.css" rel="stylesheet">
-
-
-
+  <script src="/dados_mock/dados_user.js"></script>
 </head>
 
 <body>
@@ -84,22 +82,14 @@
 
           <ul id="myUL">
             <li><a style="text-align: center; background-color: gray;"><b>Filtro</b></a></li>
-            <li><a href="#">Bombeiro Hidráulico</a></li>
-            <li><a href="#">Diarista</a></li>
-            <li><a href="#">Eletricista</a></li>
-            <li><a href="#">Encanador</a></li>
-            <li><a href="#">Faxineira</a></li>
-            <li><a href="#">Jardineiro</a></li>
-            <li><a href="#">Pedreiro</a></li>
-
-            <li><a style="text-align: center; background-color: white;">
-                <select class="form-select" aria-label="Default select example">
-                  <option selected>Data da postagem</option>
-                  <option value="data1">Fevereiro</option>
-                  <option value="data2">Março</option>
-                  <option value="data3">Abril</option>
-                </select></a></li>
-            <li><button style="width:100%;" class="btn btn-primary submit">Buscar</button></li>
+            <li><a onclick="filter_posts('diarista');">Diarista</a></li>
+            <li><a onclick="filter_posts('eletricista');">Eletricista</a></li>
+            <li><a onclick="filter_posts('encanador');">Encanador</a></li>
+            <li><a onclick="filter_posts('faxineira');">Faxineira</a></li>
+            <li><a onclick="filter_posts('jardineiro');">Jardineiro</a></li>
+            <li><a onclick="filter_posts('pedreiro');">Pedreiro</a></li>
+            <li><a onclick="filter_posts('mecanico');">Mecânico</a></li>
+            <li><a onclick="filter_posts('all');">Todas as categorias</a></li>
           </ul>
 
         </div>
@@ -109,8 +99,7 @@
 
         <!-- Serviços -->
         <div class="section-title col-md-4" id="about-us" style="text-align: left;">
-          <br>
-          <div id="containers">
+          <div class="containers">
 
             <div class="product-details">
               <h1>Eletricista</h1>
@@ -133,73 +122,6 @@
 
                 <button class="btn1" style="left: 80px; top: 18px;">
                   <span class="price">R$650</span>
-                  <span class="plus"><i class="fa fa-plus" style="color: #1a66ff;" aria-hidden="true"></i></span>
-                  <span class="buy">Solicitar</span>
-                </button>
-
-              </div>
-
-            </div>
-
-          </div>
-
-          <div id="containers">
-
-            <div class="product-details col-md-4">
-
-              <h1>Encanador</h1>
-              <br><span class="hint-star star">
-                <i class="fa fa-star" aria-hidden="true"></i>
-                <i class="fa fa-star" aria-hidden="true"></i>
-                <i class="fa fa-star" aria-hidden="true"></i>
-                <i class="fa fa-star-o" aria-hidden="true"></i>
-                <i class="fa fa-star-o" aria-hidden="true"></i>
-              </span></br>
-
-              <p style="margin-bottom: 15px;"><i>Publicado há 13 horas &emsp; Interessados: 7</i></p>
-
-              <p>Profissional responsável pela instalação e manutenção de sistemas usados para água potável, esgoto e
-                drenagem em sistemas de encanamento.</p>
-
-
-
-              <div class="control">
-
-                <button class="btn1" style="left: 80px; top:18px;">
-                  <span class="price">R$500</span>
-                  <span class="plus"><i class="fa fa-plus" style="color: #1a66ff;" aria-hidden="true"></i></span>
-                  <span class="buy">Solicitar</span>
-                </button>
-
-              </div>
-
-            </div>
-
-          </div>
-
-          <div id="containers">
-
-            <div class="product-details col-md-4">
-
-              <h1>Diarista</h1>
-              <br><span class="hint-star star">
-                <i class="fa fa-star" aria-hidden="true"></i>
-                <i class="fa fa-star" aria-hidden="true"></i>
-                <i class="fa fa-star" aria-hidden="true"></i>
-                <i class="fa fa-star" aria-hidden="true"></i>
-                <i class="fa fa-star" aria-hidden="true"></i>
-              </span></br>
-
-              <p style="margin-bottom: 15px;"><i>Publicado há 20 horas &emsp; Interessados: 1</i></p>
-              <p>Profissional responsável por manter a casa limpa e organizada, realizando tarefas como varrer e passar
-                pano na casa, tirar o pó dos móveis, trocar a roupa de cama, dentre outros.</br></p>
-
-
-
-              <div class="control">
-
-                <button class="btn1" style="left: 80px; top:18px;">
-                  <span class="price">R$370</span>
                   <span class="plus"><i class="fa fa-plus" style="color: #1a66ff;" aria-hidden="true"></i></span>
                   <span class="buy">Solicitar</span>
                 </button>
@@ -243,6 +165,7 @@
 
   <!-- JS -->
   <script src="assets/js/main.js"></script>
+  <script src="js/jobs.js"></script>
 
 </body>
 

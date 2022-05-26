@@ -26,7 +26,7 @@
 
   <!-- CSS -->
   <link href="assets/css/style.css" rel="stylesheet">
-
+  <script src="/dados_mock/dados_user.js"></script>
 </head>
 
 <body>
@@ -74,7 +74,7 @@
                   <br>
                   <li><button style="width:100%; color: white;" class="btn btn-danger submit">Excluir conta</button>
                   </li></br>
-                  <li><button style="width:100%; color: white;" class="btn btn-warning submit">Sair da conta</button>
+                  <li><button style="width:100%; color: white;" id="quit_admin" class="btn btn-warning submit">Sair da conta</button>
                   </li>
                 </ul>
               </div>
@@ -88,7 +88,7 @@
           <br></br>
           <br></br>
 
-          <table>
+          <table id="Profiles_users">
             <tr>
               <th>Usuário</th>
               <th>Postagens</th>
@@ -98,36 +98,6 @@
             <tr>
               <td>Andre Alves</td>
               <td>19</td>
-              <td><button type="button" class="btn btn-primary">Acessar posts</button></td>
-              <td><button type="button" class="btn btn-danger">Excluir conta</button></td>
-            </tr>
-            <tr>
-              <td>Angelita Aparecida</td>
-              <td>10</td>
-              <td><button type="button" class="btn btn-primary">Acessar posts</button></td>
-              <td><button type="button" class="btn btn-danger">Excluir conta</button></td>
-            </tr>
-            <tr>
-              <td>Cecília Lopes</td>
-              <td>15</td>
-              <td><button type="button" class="btn btn-primary">Acessar posts</button></td>
-              <td><button type="button" class="btn btn-danger">Excluir conta</button></td>
-            </tr>
-            <tr>
-              <td>Maria Josefina</td>
-              <td>211</td>
-              <td><button type="button" class="btn btn-primary">Acessar posts</button></td>
-              <td><button type="button" class="btn btn-danger">Excluir conta</button></td>
-            </tr>
-            <tr>
-              <td>Pereirão</td>
-              <td>156</td>
-              <td><button type="button" class="btn btn-primary">Acessar posts</button></td>
-              <td><button type="button" class="btn btn-danger">Excluir conta</button></td>
-            </tr>
-            <tr>
-              <td>Rafaela Batista</td>
-              <td>203</td>
               <td><button type="button" class="btn btn-primary">Acessar posts</button></td>
               <td><button type="button" class="btn btn-danger">Excluir conta</button></td>
             </tr>
@@ -158,6 +128,8 @@
   </footer>
   <!-- Footer -->
 
+  <script src="js/admin.js"></script>
+
   <!-- Vendor JS -->
   <script src="assets/vendor/purecounter/purecounter.js"></script>
   <script src="assets/vendor/aos/aos.js"></script>
@@ -169,7 +141,6 @@
 
   <!-- JS -->
   <script src="assets/js/main.js"></script>
-  <script src="js/admin.js"></script>
 
 </body>
 
