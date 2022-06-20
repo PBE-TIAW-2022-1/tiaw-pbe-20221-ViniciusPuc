@@ -1,0 +1,16 @@
+.user_input{
+    width: 50vw;
+    margin-top: 20px;
+}
+.user_description{
+    width: 50vw;
+}
+.container_price{
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+.container_btns{
+    margin: 0;
+    padding: 0;
+}

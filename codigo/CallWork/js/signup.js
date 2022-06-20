@@ -31,7 +31,6 @@ function initLoginApp () {
         db_usuarios = JSON.parse(usuariosJSON);    
     }
 };
-initLoginApp();
 
 function generateUUID() { // Public Domain/MIT
     var d = new Date().getTime();//Timestamp
@@ -77,8 +76,20 @@ function salvaLogin(event) {
         alert('As senhas informadas não conferem.');
         return
     }else{
-        // Adiciona o usuário no banco de dados
-        addUser(nome, login, senha, email);
+        // Adiciona o usuário no banco de dados]
+        let bodyNewUser = {
+            "permission": login,
+            "email": email,
+            "profile_img": "",
+            "nome": nome,
+            "senha": senha,
+            "idade": 999,
+            "profissao": ""
+        }
+        newUser(bodyNewUser);
+        newPosts();
+        newProfiles();
+        // addUser(nome, login, senha, email);
         alert('Usuário salvo com sucesso. Proceda com o login');
         window.location.href = 'login.html';
     }

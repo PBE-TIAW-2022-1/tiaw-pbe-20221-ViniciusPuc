@@ -26,6 +26,8 @@
 
     <!-- CSS -->
     <link href="assets/css/style.css" rel="stylesheet">
+    <script src="js/dados_user.js"></script>
+    <script src="js/index.js"></script>
 
   </head>
 
@@ -41,8 +43,10 @@
         <!-- Navbar -->
         <nav id="navbar" class="navbar">
           <ul>
-            <li><input type="text" placeholder="Buscar serviços" name="search" id="search" style="width: 320px; height: 40px;"></li>
-            <button type="submit" id="btn_search" style="width: 50px; height: 40px;"><i class="fa fa-search"></i></button></input>
+            <form action="search.html" onsubmit="searchData()" method="get">
+              <li><input type="text" placeholder="Buscar serviços" name="search" id="search" style="width: 320px; height: 40px;"></input></li>
+              <button type="submit" id="btn_search" style="width: 50px; height: 40px;"><i class="fa fa-search"></i></button>
+            </form>
             <li><a href="login.html">Login</a></li>
             <li><a href="cadastro.html">Cadastrar</a></li>
             <li><a href="sobre.html">Sobre</a></li>
@@ -146,7 +150,7 @@
     <!-- JS -->
     <script src="assets/js/main.js"></script>
     <script src="js/ver_user.js"></script>
-
+    
   </body>
 
 </html>

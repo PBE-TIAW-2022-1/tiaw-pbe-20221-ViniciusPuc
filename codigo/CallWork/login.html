@@ -24,6 +24,8 @@
   <!-- CSS -->
   <link href="assets/css/style.css" rel="stylesheet">
 
+  <script src="js/dados_user.js"></script>
+
 </head>
 
 <body>
@@ -35,11 +37,10 @@
       <div class="logo">
         <a href="index.html"><img src="assets/img/logo-header.png" width="52px" height="270px"></a>
       </div>
-
       <!-- Navbar -->
       <nav id="navbar" class="navbar">
         <ul>
-          <li><a href="login.html">Login</a></li>
+          <li><a href="cadastro.html">Cadastrar</a></li>
           <li><a href="sobre.html">Sobre</a></li>
         </ul>
         <i class="bi bi-list mobile-nav-toggle"></i>
@@ -55,7 +56,7 @@
     <div class="container" data-aos="fade-up">
 
       <header class="section-header">
-        <h3 style="margin-bottom: 40px;">Cadastro</h3>
+        <h3 style="margin-bottom: 40px;">Login</h3>
       </header>
 
       <div class="row">
@@ -68,63 +69,42 @@
         </div>
 
         <div class="col-lg-6 background order-lg-2" data-aos="zoom-in">
-          <form>
-            <div class="form-row">
-              <div class="col-md-8 mb-3">
-                <label for="validationServer01">Nome:</label>
-                <input type="text" class="form-control" id="validationServer01" placeholder="Nome" required>
-                <!-- <div class="valid-feedback">
-                  Looks good!
-                </div> -->
-              </div>
+          <form id="login-form" class="form" method="post" onsubmit="loginUser(this)">
+            <div class="form-group">
+              <label for="exampleInputEmail1">E-mail</label>
+              <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+                placeholder="E-mail cadastrado">
+              <small id="emailHelp" class="form-text text-muted">Não compartilhamos seus dados com terceiros.</small>
             </div>
-            <div class="form-row">
-              <div class="col-md-7 mb-3">
-                <label for="validationServer03">E-mail:</label>
-                <input type="email" class="form-control" id="validationServer03" placeholder="E-mail" required>
-                <!-- <div class="invalid-feedback">
-                  Please provide a valid city.
-                </div> -->
-              </div>
-              <div class="col-md-6 mb-3">
-                <label for="validationServer04">Digite uma senha:</label>
-                <input type="password" class="form-control" id="validationServer04" placeholder="Senha" required>
-                <!-- <div class="invalid-feedback">
-                  Please provide a valid state.
-                </div> -->
-              </div>
+            <div class="form-group">
+              <label for="exampleInputPassword1">Senha</label>
+              <input type="password" class="form-control" id="exampleInputPassword1" style="margin-bottom: 30px;"
+                placeholder="Insira sua senha">
             </div>
-            <div class="form-row">
-              <div class="col-md-8 mb-3">
-                <label for="validationServer01">Digite a senha novamente:</label>
-                <input type="password" class="form-control" id="validationServer02" placeholder="Senha" required>
-                <!-- <div class="valid-feedback">
-                  Looks good!
-                </div> -->
-              </div>
-            </div>
-            <button class="btn btn-primary" id="btn_salvar" type="submit">Cadastrar</button>
 
-            <p class="link">  
-              Já tem conta?
-              <a href="login.html"> Ir para Login </a>
-            </p>
+            <button type="submit" class="btn btn-success">Entrar</button>
           </form>
+
+          <p class="link">
+            Ainda não tem conta?
+            <a href="cadastro.html">Cadastre-se</a>
+          </p>
         </div>
       </div>
 
     </div>
-  </section><!-- Principal -->
+  </section>
+  <!-- Principal -->
 
 
-  <!-- Footer  -->
+  <!-- Footer -->
   <footer id="footer">
     <div class="container">
       <div class="row">
 
         <div class="container">
           <div class="copyright">
-            &copy; <strong>Call Work</strong>. Todos os direitos reservados.
+            &copy;<strong>Call Work</strong>. Todos os direitos reservados.
           </div>
         </div>
       </div>
@@ -141,7 +121,7 @@
 
   <!-- JS -->
   <script src="assets/js/main.js"></script>
-  <script src="js/signup.js"></script>
+  <script src="js/login.js"></script>
 
 </body>
 
