@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <h1>CALL WORK</h1>
+        <p>controle de informações</p>
+    </header>
+    <main>
+        <section>
+            <div id="perfil">
+                <img src="" alt="">
+                <h2>Administrador do sistema</h2>
+            </div>
+            <div id="painel_de_controle">
+                <h2>Painel de controle:</h2>
+                <button type="button" class="button_header">Sair da conta</button>
+                <button id="alterar_senha" type="button" class="button_header">Alterar senha</button>
+                <button id="add_user" type="button" class="button_header">Adicionar/Excluir conta</button>
+            </div>
+        </section>
+        <section id="container_section">
+            <div id="container_senha">
+                <h2>Crie uma nova senha</h2>
+                <input type="text" placeholder="Nova senha" name="nova_senha" id="nova_senha">
+                <input type="text" placeholder="Insira nova senha novamente" name="senha_repet" id="senha_repet">
+                <button type="button" id="salvar_senha">Salvar nova senha</button>
+            </div>
+            <div id="user_profile">
+                <h1>Usuários cadastrados:</h1>
+                <div class="container_user">
+                    <input type="text" readonly="true" value="Nome Usuario" class="user_input" name="nome" id="nome_1">
+                    <button type="submit" class="btn_subm" id="btn_alterar_nome">Confirmar</button>
+                    <p onclick="alterar_nome('Alterar_nome_1', 'btn_alterar_nome_1', 'nome_1')" id="Alterar_nome1">Alterar Nome</p>
+                    <p id="Exluir_user1">Excluir Usuario</p>
+                </div>
+            </div>
+            <div id="add_new">
+                <input type="text" placeholder="Insira um novo usuário" name="add_users" id="add_users">
+                <button type="button" id="add_btn">Adicionar usuário</button>
+            </div>
+        </section>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
