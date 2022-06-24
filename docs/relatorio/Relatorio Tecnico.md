@@ -39,6 +39,13 @@ Sistemas de Informação - PUC Minas
   - [Divisão de Papéis](#divisão-de-papéis)
   - [Ferramentas](#ferramentas)
   - [Controle de Versão](#controle-de-versão)
+- [Projeto da Solução](#projeto-da-solução)
+  - [Tecnologias utilizadas](#tecnologias-utilizadas)
+  - [Arquitetura da solução](#arquitetura-da-solução)
+- [Avaliação da aplicação](#avaliação-da-aplicação)
+    - [Plano de testes](#plano-de-testes)
+    - [Registros de testes](#registro-de-testes)
+- [Referências](#referências)
 
 
 # Introdução
@@ -252,6 +259,23 @@ Por convenção, usamos os seguintes nomes de branchs:
 Na questão dos issues, nosso projeto usa as seguintes etiquetas:
  - `bug`: uma funcionalidade encontra-se com problemas
  - `feature`: uma nova funcionalidade precisa ser introduzida
+
+
+# Projeto da solução
+   Com o intuito de propor uma ferramenta arrojada mas com simplicidade decidimos desenvolver uma aplicação que fosse capaz de simplificar as relações de prestação de serviço doméstico, de uma forma que fosse possível realizar orçamento, encontrar bons profissionais, fazer e receber avaliações, realizar transações financeiras e etc. 
+
+## Tecnologias utilizadas
+  Em nossa aplicação utilizamos a linguagem de programação JavaScript, a linguagem de marcação de hipertextos HTML e a linguagem de estilização CSS. Como plataforma de desenvolvimento usamos a IDE Visual Studio Code. No versionamento de códigos utilizamos o GIT e para armazenar as documentações o GITHUB. E para o armazenamento WEB foi utilizado o Local Storage. Para realizar as reuniões com todo a equipe utilizamos o discord. E além das supracitadas o Heroku e o Replit.
+  
+  (AINDA FALTA O RESTANTE DAS TECNOLOGIAS, O USERFLOW, PROTOTIPOS DE TELAS WIREFRAMES)
+  
+## Plano de testes
+
+## Registro de testes
+
+  Com o intuito de verificar as funcionalidades implementadas em nossas aplicações JavaScript e Json utilizamos os mecanismos e ferramentas de testes unitários como 
+
+
 
 # Referências
 
