@@ -11,6 +11,12 @@ function pesquisa(){
             let aux = "";
             for(let i = 0; i < posts.length; i++){
                 for(let j = 0; j< posts[i].publications.length; j++){
+                    if (usuarioCorrenteJSON != '{}') {
+                        var userNumber = `proposta.html?telefone=${db_usuarios[i].telefone}`;
+                    }else{
+                        var userNumber = 'cadastro.html';
+                    }
+                    
                     if (posts[i].publications[j].category.includes(query) || posts[i].publications[j].title.includes(query) || posts[i].publications[j].description.includes(query)){
 
                         // calcular qtd de estrelas
@@ -58,11 +64,13 @@ function pesquisa(){
                                     <p>${posts[i].publications[j].description}</p>
                             
                                     <div class="control">
-                                        <button class="btn1" id="btn_soli_${posts[i].publications[j].id_post}" style="left: 80px; top: 18px;">
-                                            <span class="price">R$ ${posts[i].publications[j].price}</span>
-                                            <span class="plus"><i class="fa fa-plus" style="color: #1a66ff;" aria-hidden="true"></i></span>
-                                            <span class="buy">Fazer proposta</span>
-                                        </button>
+                                        <a href="${userNumber}">
+                                            <button class="btn1" id="btn_soli_${posts[i].publications[j].id_post}" style="left: 80px; top: 18px;">
+                                                <span class="price">R$ ${posts[i].publications[j].price}</span>
+                                                <span class="plus"><i class="fa fa-plus" style="color: #1a66ff;" aria-hidden="true"></i></span>
+                                                <span class="buy">Fazer proposta</span>
+                                            </button>
+                                        </a>
                                     </div>
                                 </div>
                             </div>

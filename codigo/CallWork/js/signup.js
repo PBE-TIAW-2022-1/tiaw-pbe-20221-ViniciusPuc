@@ -70,7 +70,9 @@ function salvaLogin(event) {
     let nome = document.getElementById('validationServer01').value;
     let email = document.getElementById('validationServer03').value;
     let senha = document.getElementById('validationServer04').value;
-    let senha2 = document.getElementById('validationServer02').value;
+    let senha2 = document.getElementById('validationServer05').value;
+    let telefone = document.getElementById('validationServer02').value;
+    let profissao = document.getElementById('validationServer06').value;
 
     if (senha != senha2) {
         alert('As senhas informadas não conferem.');
@@ -80,18 +82,47 @@ function salvaLogin(event) {
         let bodyNewUser = {
             "permission": login,
             "email": email,
+            "telefone": telefone,
             "profile_img": "",
             "nome": nome,
             "senha": senha,
             "idade": 999,
-            "profissao": ""
+            "profissao": profissao,
         }
-        newUser(bodyNewUser);
-        newPosts();
-        newProfiles();
-        // addUser(nome, login, senha, email);
-        alert('Usuário salvo com sucesso. Proceda com o login');
-        window.location.href = 'login.html';
+
+        var xhr = new XMLHttpRequest();
+        xhr.withCredentials = false;
+    
+        xhr.addEventListener("readystatechange", function () {
+            if (this.readyState === 4) {
+                users = (JSON.parse(this.responseText));
+                let ver;
+                for(let i = 0; i < users.length; i++){
+                    if (users[i].email == email){
+                        ver = false;
+                        break;
+                    }else{
+                        ver = true;
+                    }
+                }
+                if(ver){
+                    newUser(bodyNewUser);
+                    newPosts();
+                    newProfiles();
+                    // addUser(nome, login, senha, email);
+                    alert('Usuário salvo com sucesso. Proceda com o login');
+                    window.location.href = 'login.html';
+                }else{
+                    alert("Email já existente! Por favor, informe outro.")
+                }
+            }
+        });
+    
+        xhr.open("GET", "https://callworkdatabase.herokuapp.com/accounts/");
+        xhr.setRequestHeader("content-type", "application/json");
+        xhr.setRequestHeader("cache-control", "no-cache");
+    
+        xhr.send();
     }
 }
 

@@ -38,8 +38,10 @@ window.onload = ()=>{
                 <!-- Navbar -->
                 <nav id="navbar" class="navbar">
                     <ul>
-                        <li><input type="text" placeholder="Buscar serviços" name="search" id="search" style="width: 320px; height: 40px;"></li>
-                        <button type="submit" id="btn_search" style="width: 50px; height: 40px;"><i class="fa fa-search"></i></button></input>
+                        <form action="search.html">
+                            <li><input type="text" id="search" placeholder="Buscar serviços" name="search" style="width: 320px; height: 40px;"></input></li>
+                            <button type="submit" onsubmit="searchData()" id="btn_search" style="width: 50px; height: 40px;"><i class="fa fa-search"></i></button>
+                        </form>
                         <li><a href="login.html">Login</a></li>
                         <li><a href="cadastro.html">Cadastrar</a></li>
                         <li><a href="sobre.html">Sobre</a></li>
@@ -48,8 +50,8 @@ window.onload = ()=>{
                     <i class="bi bi-list mobile-nav-toggle"></i>
                 </nav>
                 <!-- Navbar -->
-        </div>
+            </div>
         `;
     }
-    document.getElementById('header').innerHTML = new_header;
+    document.querySelector('.header').innerHTML = new_header;
 }

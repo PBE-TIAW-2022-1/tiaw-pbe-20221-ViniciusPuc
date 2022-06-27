@@ -26,7 +26,9 @@ function loadControlPanel(users){
                     </div>
             
                     <button onclick="new_post()" class="bttn draw-border">Publicar novo trabalho</button>
-                    <button class="bttn draw-border">Buscar</button>
+                    <a href="search.html">
+                        <button class="bttn draw-border">Buscar</button>
+                    </a>
                 </div>
             `;
             
@@ -208,7 +210,7 @@ window.onload = ()=>{
             </div>
         `;
 
-        document.getElementById('header').innerHTML = new_header;
+        document.querySelector('.header').innerHTML = new_header;
         requestLoadControlPanel();
     }
 }
@@ -216,7 +218,8 @@ window.onload = ()=>{
 // Apaga os dados do usuário corrente no sessionStorage
 document.getElementById('quit_btn').addEventListener('click', ()=>{
     usuarioCorrente = {};
-    sessionStorage.setItem ('usuarioCorrente', JSON.stringify (usuarioCorrente));
+    sessionStorage.setItem ('usuarioCorrente', JSON.stringify(usuarioCorrente));
+    localStorage.removeItem('user_id');
     window.location = 'index.html';
 })
 
