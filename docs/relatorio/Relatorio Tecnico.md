@@ -228,7 +228,7 @@ Artefatos do Design Thinking (Em grupo)
 |-----------|-------------------------|---------------|
 |Processo de Design Thinking  | --- |  -------------- | 
 |Repositório de código | GitHub | https://github.com/PBE-TIAW-2022-1/tiaw-pbe-20221-ViniciusPuc | 
-|Hospedagem do site | Heroku |  https://XXXXXXX.herokuapp.com | 
+|Hospedagem do site | Heroku |  https://callwork.herokuapp.com/ | 
 |Protótipo Interativo | Figma | https://www.figma.com/file/j2Evu8ivdok9xExPx9bstb/Prototipo?node-id=0%3A1| 
 
 
@@ -267,14 +267,33 @@ Na questão dos issues, nosso projeto usa as seguintes etiquetas:
 ## Tecnologias utilizadas
   Em nossa aplicação utilizamos a linguagem de programação JavaScript, a linguagem de marcação de hipertextos HTML e a linguagem de estilização CSS. Como plataforma de desenvolvimento usamos a IDE Visual Studio Code. No versionamento de códigos utilizamos o GIT e para armazenar as documentações o GITHUB. E para o armazenamento WEB foi utilizado o Local Storage. Para realizar as reuniões com todo a equipe utilizamos o discord. E além das supracitadas o Heroku e o Replit.
   
-  (AINDA FALTA O RESTANTE DAS TECNOLOGIAS, O USERFLOW, PROTOTIPOS DE TELAS WIREFRAMES)
+  Prototipos de telas:
+  ![2022-06-28](https://user-images.githubusercontent.com/102560248/176272359-8aec6490-1f48-4015-9511-80a1e7c77d6f.png)
+  Página Inicial (é possível observar as principais informações).
+  
+  ![2022-06-28 (2)](https://user-images.githubusercontent.com/102560248/176272502-5dc919f4-cc31-4fc3-9052-4918c9ee5a95.png)
+  Tela de cadastro para a posterior publicação de serviços.
+  
+  ![2022-06-28 (1)](https://user-images.githubusercontent.com/102560248/176272840-af4d9324-c43d-465e-baed-88df58b54ec9.png)
+  Página de Serviços
+  
+  ![2022-06-28 (4)](https://user-images.githubusercontent.com/102560248/176286377-0a99f484-83d4-4252-a389-1c03317c92ce.png)
+  "Página Sobre nós"
+
+  
+## Arquitetura da solução
+
+  ![image](https://user-images.githubusercontent.com/102560248/176270010-b9c93d40-40eb-4d1b-b982-56ef0e874d43.png)
+  
+    Apartir do diagrama de arquitetura é possivel observar o fluxo de dados que ocorre em nossa aplicação, no momento em que o usuário entra no site e é carregado todo o código HTML e que chama o JavaScript para trazer a dinamicidade para site, e no registro de informações ou busca os dados são obtidos a partir do Json Server.
+ 
   
 ## Plano de testes
+  Para nos auxiliar no processo de desenvolvimento final da nossa aplicação, afim de assegurar a qualidade do produto, utilizamos os testes de software. O nosso primeiro teste foi o de usabilidade, selecionamos algumas pessoas para interagir com nossas aplicações para perceber se ela cumpre os requisistos necessários. Além disso realizamos os testes de carga para observar como a aplicação reage com os recebimentos de dados.
 
 ## Registro de testes
 
-  Com o intuito de verificar as funcionalidades implementadas em nossas aplicações JavaScript e Json utilizamos os mecanismos e ferramentas de testes unitários como 
-
+  Ao iniciar os testes de usabilidade percebemos dificuldade dos usuários em realizarem o contato via WhatsApp uma vez que o número de telefone deve ser inserido com o ddd e sem espaços. Para reverter esta dificuldade iremos incluir uma orientação na página. Além disso, observamos alguns erro na hora de realizar os cadastros de oportunidades e dificuldades na pesquisa de profissionais. Em seguida destacamos o que poderia ser melhorado e atualizamos os códigos para sanar o problema.
 
 
 # Referências
@@ -298,3 +317,7 @@ Workana LLC. Disponível em: https://www.workana.com/. Acessado em: 2022.
 Freelancer. Disponível em: https://www.br.freelancer.com/. Acessado em: 2022. 
 99Freelas. Disponível em: https://www.99freelas.com.br/. Acessado em: 2022.
 GetNinjas. Disponível em: https://www.getninjas.com.br/. Acessado em: 2022.
+
+Testes de software:
+https://blog.onedaytesting.com.br/teste-de-software/
+https://geekflare.com/javascript-unit-testing/
