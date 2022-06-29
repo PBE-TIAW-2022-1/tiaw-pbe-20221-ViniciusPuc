@@ -253,12 +253,13 @@ Artefatos do Design Thinking (Em grupo)
 
 Por convenção, usamos os seguintes nomes de branchs: 
  - `master`: versão estável já testada do software
- - `testVersion`: versão em testes do software
  - `developer`: versão de desenvolvimento do software
  
 Na questão dos issues, nosso projeto usa as seguintes etiquetas:
  - `bug`: uma funcionalidade encontra-se com problemas
- - `feature`: uma nova funcionalidade precisa ser introduzida
+
+![image](https://user-images.githubusercontent.com/102560248/176520978-b369c507-4072-474c-9ba4-924789689d5b.png)
+
 
 
 # Projeto da solução
