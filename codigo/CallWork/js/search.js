@@ -11,25 +11,14 @@ function pesquisa(){
             let aux = "";
             for(let i = 0; i < posts.length; i++){
                 for(let j = 0; j< posts[i].publications.length; j++){
+                    if (usuarioCorrenteJSON != '{}') {
+                        var userNumber = `proposta.html?telefone=55${db_usuarios[i].telefone}`;
+                    }else{
+                        var userNumber = 'cadastro.html';
+                    }
+                    
                     if (posts[i].publications[j].category.includes(query) || posts[i].publications[j].title.includes(query) || posts[i].publications[j].description.includes(query)){
 
-                        // calcular qtd de estrelas
-                        for(let k = 0; k < profiles.length; k++){
-                            if(profiles[k].id == posts[i].id){
-                                stars = '';
-                                for(let f = 0; f < profiles[k].stars; f++){
-                                    stars =  stars + `
-                                        <i class="fa fa-star" aria-hidden="true"></i>
-                                    `;
-                                };
-                                for(let g = 0; g < (5 - profiles[k].stars); g++){
-                                    stars = stars + `
-                                        <i class="fa fa-star-o" aria-hidden="true"></i>
-                                    `;
-                                };
-                            }
-                        }
-            
                         //calculando hora da publicação
                         var dtPartida = posts[i].publications[j].date_pub;
                         const hoje = new Date();
@@ -48,21 +37,19 @@ function pesquisa(){
                                 <div class="product-details">
                                     <h1>${posts[i].publications[j].title}</h1>
                                     <br>
-                                        <span class="hint-star star">
-                                            ${stars}
-                                        </span>
-                                    </br>
                             
                                     <p style="margin-bottom: 15px;"><i>Publicado há: ${diff} &emsp; Interessados: ${posts[i].publications[j].num_inter}</i></p>
                             
                                     <p>${posts[i].publications[j].description}</p>
                             
                                     <div class="control">
-                                        <button class="btn1" id="btn_soli_${posts[i].publications[j].id_post}" style="left: 80px; top: 18px;">
-                                            <span class="price">R$ ${posts[i].publications[j].price}</span>
-                                            <span class="plus"><i class="fa fa-plus" style="color: #1a66ff;" aria-hidden="true"></i></span>
-                                            <span class="buy">Fazer proposta</span>
-                                        </button>
+                                        <a href="${userNumber}">
+                                            <button class="btn1" id="btn_soli_${posts[i].publications[j].id_post}" style="left: 80px; top: 18px;">
+                                                <span class="price">R$ ${posts[i].publications[j].price}</span>
+                                                <span class="plus"><i class="fa fa-plus" style="color: #1a66ff;" aria-hidden="true"></i></span>
+                                                <span class="buy">Fazer proposta</span>
+                                            </button>
+                                        </a>
                                     </div>
                                 </div>
                             </div>

@@ -34,7 +34,7 @@
 <body>
 
   <!-- Header -->
-  <header id="header" class="fixed-top d-flex align-items-center">
+  <header class="header fixed-top d-flex align-items-center">
     <div class="container d-flex justify-content-between">
 
       <div class="logo">
@@ -43,13 +43,15 @@
       <!-- Navbar -->
       <nav id="navbar" class="navbar">
         <ul>
-          <li><input type="text" placeholder="Buscar serviços" name="search" style="width: 320px; height: 40px;"></input></li>
-          <button type="submit" onclick="searchData()" style="width: 50px; height: 40px;"><i class="fa fa-search"></i></button>
+          <form action="search.html">
+            <li><input type="text" id="search" placeholder="Buscar serviços" name="search" style="width: 320px; height: 40px;"></input></li>
+            <button type="submit" onsubmit="searchData()" id="btn_search" style="width: 50px; height: 40px;"><i class="fa fa-search"></i></button>
+          </form>
           <li><a href="servicos.html">Serviços</a></li>
           <li><a href="sobre.html">Sobre</a></li>
           <li><a href="profile.html"><button class="button button5"><img src="assets/img/request.png" width="30px" height="30px"></button></a></li>
         </ul>
-        <i class="bi bi-list mobile-nav-toggle"></i>
+        <i onclick="mobile()" class="bi bi-list mobile-nav-toggle"></i>
       </nav>
       <!-- Navbar -->
 
@@ -99,7 +101,9 @@
                 </div>
 
                 <button class="bttn draw-border">Publicar novo trabalho</button>
-                <button class="bttn draw-border">Buscar</button>
+                <a href="search.html">
+                  <button class="bttn draw-border">Buscar</button>
+                </a>
               </div>
             </div>
           </div>

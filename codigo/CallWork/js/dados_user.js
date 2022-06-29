@@ -131,10 +131,12 @@ function account_del(id_profile){
     deleteDB('accounts', id_profile);
     deleteDB('profiles', id_profile);
     deleteDB('posts', id_profile);
-    alert('Conta apagada');
+    alert('Conta excluída com sucesso!');
     if (usuarioCorrente.login == 'admin'){
         window.location.reload();
     }else{
+        localStorage.removeItem("user_id");
+        sessionStorage.clear();
         window.location.href = 'index.html';
     }
 }

@@ -1,0 +1,120 @@
+body{
+    overflow-x: hidden;
+    margin: 0%;
+    padding: 0%;
+}
+a{
+    text-decoration: none;
+}
+header{
+    border: 1px solid #000;
+    text-align: center;
+    padding: 10px;
+    background-color: #6eaae2;
+}
+header > h1, header > p{
+    margin: 0px;
+    padding: 0px;
+    color: #ffffff;
+}
+#hidden{
+    display: none;
+    padding: 1px;
+    padding-left: 10px;
+    font-size: 20px;
+    font-weight: bold;
+    color: #fc0000;
+    background-color: #d6a9a9a9;
+    width: 50vw;
+    border: 2px solid #fc0000;
+    border-radius: 10px;
+    margin: auto;
+}
+#hidden > p{
+    margin: 3px;
+}
+.container{
+    border: 1px solid #000;
+    margin: auto;
+    margin-top: 10vh;
+    margin-bottom: 100px;
+    width: 50vw;
+    padding: 20px;
+    box-shadow: 2px 2px 5px #000;
+}
+.container_input{
+    display: flex;
+    flex-wrap: wrap;
+
+}
+.container_all{
+    margin: 10px;
+}
+.span_block{
+    display: flex;
+}
+
+.span_block span{
+    color: #5ca153;
+    border: 1px solid #15a302;
+    background-color: #add8a77c;
+    border-right: none;
+    padding: 5px;
+    font-size: 25px;
+}
+input{
+    color: #498042;
+    border: 1px solid #15a302;
+    background-color: #add8a77c;
+    width: 10vw;
+    height: 36px;
+    font-size: 20px;
+    padding-left: 10px;
+}
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+input[type="number"] {
+    -moz-appearance: textfield;
+}
+#propostaArea{
+    width: 45vw;
+}
+.Btns{
+    margin-top: 20px;
+    margin-right: 50px;
+    height: 30px;
+    border: 1px solid;
+    border-radius: 5px;
+    color: #ffffff;
+
+}
+#btnCancelar{
+    border-color: #662020;
+    background-color: #f36363;
+}
+#btnCancelar:hover{
+    cursor: pointer;
+    transform: scale(1.1);
+}
+#btnProposta{
+    border-color: #375a32;
+    background-color: #559e4b;
+}
+#btnProposta:hover{
+    cursor: pointer;
+    transform: scale(1.1);
+}
+footer{
+    position: fixed;
+    bottom: 0px;
+    left: 0px;
+    color: #fc0000;
+    background-color: #000;
+    text-align: center;
+    width: 100vw;
+    height: 35px;
+
+}

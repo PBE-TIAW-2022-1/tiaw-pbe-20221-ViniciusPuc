@@ -20,7 +20,7 @@
 </head>
 <body>
     <!-- Header -->
-    <header id="header" class="fixed-top d-flex align-items-center">
+    <header class="header fixed-top d-flex align-items-center">
         <div class="container d-flex justify-content-between">
 
         <div class="logo">
@@ -30,8 +30,10 @@
         <!-- Navbar -->
         <nav id="navbar" class="navbar">
             <ul>
-            <li><input type="text" id="search" placeholder="Buscar serviços" name="search" style="width: 320px; height: 40px;"></input></li>
-            <button type="submit" onclick="searchData()" id="btn_search" style="width: 50px; height: 40px;"><i class="fa fa-search"></i></button>
+            <form action="search.html">
+                <li><input type="text" id="search" placeholder="Buscar serviços" name="search" style="width: 320px; height: 40px;"></input></li>
+                <button type="submit" onsubmit="searchData()" id="btn_search" style="width: 50px; height: 40px;"><i class="fa fa-search"></i></button>
+            </form>
             <li><a href="cadastro.html">Cadastrar</a></li>
             <li><a href="login.html">Login</a></li>
             <li><a href="sobre.html">Sobre</a></li>

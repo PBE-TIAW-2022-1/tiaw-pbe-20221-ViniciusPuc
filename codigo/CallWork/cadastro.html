@@ -22,13 +22,12 @@
   <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
 
   <!-- CSS -->
-  <link href="assets/css/style.css" rel="stylesheet">
+  <link href="css/signup.css" rel="stylesheet">
   <script src="js/dados_user.js"></script>
 
 </head>
 
 <body>
-
   <!-- Header -->
   <header id="header" class="fixed-top d-flex align-items-center">
     <div class="container d-flex justify-content-between">
@@ -43,7 +42,7 @@
           <li><a href="login.html">Login</a></li>
           <li><a href="sobre.html">Sobre</a></li>
         </ul>
-        <i class="bi bi-list mobile-nav-toggle"></i>
+        <i onclick="mobile()" class="bi bi-list mobile-nav-toggle"></i>
       </nav>
       <!-- Navbar -->
 
@@ -80,12 +79,30 @@
               </div>
             </div>
             <div class="form-row">
+              <div class="col-md-8 mb-3">
+                <label for="validationServer02">Telefone: (somente números)</label>
+                <input type="text" class="form-control" id="validationServer02" placeholder="31999999999" required>
+                <!-- <div class="valid-feedback">
+                  Looks good!
+                </div> -->
+              </div>
+            </div>
+            <div class="form-row">
               <div class="col-md-7 mb-3">
                 <label for="validationServer03">E-mail:</label>
                 <input type="email" class="form-control" id="validationServer03" placeholder="E-mail" required>
                 <!-- <div class="invalid-feedback">
                   Please provide a valid city.
                 </div> -->
+              </div>
+              <div class="form-row">
+                <div class="col-md-8 mb-3">
+                  <label for="validationServer06">Profissão:</label>
+                  <input type="text" class="form-control" id="validationServer06" placeholder="Desenvolvedor" required>
+                  <!-- <div class="valid-feedback">
+                    Looks good!
+                  </div> -->
+                </div>
               </div>
               <div class="col-md-6 mb-3">
                 <label for="validationServer04">Digite uma senha:</label>
@@ -97,8 +114,8 @@
             </div>
             <div class="form-row">
               <div class="col-md-8 mb-3">
-                <label for="validationServer01">Digite a senha novamente:</label>
-                <input type="password" class="form-control" id="validationServer02" placeholder="Senha" required>
+                <label for="validationServer05">Digite a senha novamente:</label>
+                <input type="password" class="form-control" id="validationServer05" placeholder="Senha" required>
                 <!-- <div class="valid-feedback">
                   Looks good!
                 </div> -->

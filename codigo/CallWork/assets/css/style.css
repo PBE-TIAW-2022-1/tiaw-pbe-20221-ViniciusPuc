@@ -33,17 +33,17 @@ h1, h2, h3, h4, h5, h6 {
 
 /* Header */
 
-#header {
+.header {
   height: 80px;
   z-index: 997;
   transition: all 0.5s;
   background: #fff;
   box-shadow: 0px 0px 30px rgba(127, 137, 161, 0.3);
 }
-#header.header-scrolled {
+.header.header-scrolled {
   height: 60px;
 }
-#header .logo h1 {
+.header .logo h1 {
   font-size: 36px;
   margin: 0;
   padding: 0;
@@ -56,11 +56,11 @@ h1, h2, h3, h4, h5, h6 {
     font-size: 28px;
   }
 }
-#header .logo h1 a, #header .logo h1 a:hover {
+.header .logo h1 a, .header .logo h1 a:hover {
   color: #00366f;
   text-decoration: none;
 }
-#header .logo img {
+.header .logo img {
   padding: 0;
   width: 62%;
 }
@@ -386,8 +386,11 @@ section div .about-extra a{
   line-height: 24px;
   margin-bottom: 0;
 }
-
+form{
+  display: flex;
+}
 #search{
+
   border-radius: 50px 0px 0px 50px;
   padding-left: 20px;
 }
