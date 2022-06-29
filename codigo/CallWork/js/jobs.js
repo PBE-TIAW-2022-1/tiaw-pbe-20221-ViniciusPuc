@@ -17,15 +17,17 @@ usuarioCorrente = JSON.parse (usuarioCorrenteJSON);
             let aux = [];
             for(let i = 0; i < post.length; i++){
                 for(let l = 0; l < post[i].publications.length; l++){
-                    if(!(aux.includes(post[i].publications[l].category))){
-                        aux.push(post[i].publications[l].category);
+                    let categoria = (post[i].publications[l].category).toUpperCase();
+
+                    if(!(aux.includes(categoria))){
+                        aux.push(categoria);
                     }
                 }
             }
             let template = `<li><b style="text-align: center;color: #fff; background-color: #313d72;">Filtro</b></li>`;
             for(let i = 0; i < aux.length; i ++){
                 template += `
-                    <li><a onclick="filter_posts('${aux[i].toLowerCase()}');">${aux[i].toUpperCase()}</a></li>
+                    <li><a onclick="filter_posts('${aux[i].toLowerCase()}');">${aux[i]}</a></li>
                 `;
             }
             template += `<li><a onclick="filter_posts('all');">Todas as categorias</a></li>`;
@@ -47,32 +49,21 @@ function filter_posts(category = 'all'){
     for(let i = 0; i < posts.length; i++){
         for(let j = 0; j < posts[i].publications.length; j++){
             if (usuarioCorrenteJSON != '{}') {
-                var userNumber = `proposta.html?telefone=${db_usuarios[i].telefone}`;
+                var userNumber = `proposta.html?telefone=55${db_usuarios[i].telefone}`;
             }else{
                 var userNumber = 'cadastro.html';
             }
-            
-            if (posts[i].publications[j].category == category || category == 'all'){
 
-                // calcular qtd de estrelas
-                for(let k = 0; k < profiles.length; k++){
-                    if(profiles[k].id == posts[i].id){
-                        stars = '';
-                        for(let f = 0; f < profiles[k].stars; f++){
-                            stars =  stars + `
-                                <i class="fa fa-star" aria-hidden="true"></i>
-                            `;
-                        };
-                        for(let g = 0; g < (5 - profiles[k].stars); g++){
-                            stars = stars + `
-                                <i class="fa fa-star-o" aria-hidden="true"></i>
-                            `;
-                        };
-                    }
-                }
-    
+            let categoria = (posts[i].publications[j].category).toUpperCase();
+
+            if (categoria == category.toUpperCase() || category == 'all'){
+
                 //calculando hora da publicação
                 var dtPartida = posts[i].publications[j].date_pub;
+                if (dtPartida.includes(',')){
+                    dtPartida = dtPartida.replace(/,/g, "");
+                }
+
                 const hoje = new Date();
                 var dtChegada = hoje.toLocaleString();
     
@@ -89,10 +80,6 @@ function filter_posts(category = 'all'){
                         <div class="product-details">
                             <h1>${posts[i].publications[j].title}</h1>
                             <br>
-                                <span class="hint-star star">
-                                    ${stars}
-                                </span>
-                            </br>
                     
                             <p style="margin-bottom: 15px;"><i>Publicado há: ${diff} &emsp; Interessados: ${posts[i].publications[j].num_inter}</i></p>
                     

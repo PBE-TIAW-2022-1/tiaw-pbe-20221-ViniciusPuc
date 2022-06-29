@@ -17,16 +17,20 @@ window.onload = ()=>{
                 <!-- Navbar -->
                 <nav id="navbar" class="navbar">
                     <ul>
-                        <li><input type="text" placeholder="Buscar serviços" name="search" id="search" style="width: 320px; height: 40px;"></li>
-                        <button type="submit" id="btn_search" style="width: 50px; height: 40px;"><i class="fa fa-search"></i></button></input>
+                        <li>
+                            <form action="search.html">
+                                <input type="text" id="search" placeholder="Buscar serviços" name="search" style="width: 320px; height: 40px;"></input>
+                                <button type="submit" onsubmit="searchData()" id="btn_search" style="width: 50px; height: 40px;"><i class="fa fa-search"></i></button>
+                            </form>
+                        </li>
                         <li><a href="sobre.html">Sobre</a></li>
                         <li><a href="servicos.html">Serviços</a></li>
                         <li><a href="${user_url}"><button class="button button5"><img src="assets/img/request.png" width="30px" height="30px"></button></a></li>
                     </ul>
-                    <i class="bi bi-list mobile-nav-toggle"></i>
+                    <i onclick="mobile()" class="bi bi-list mobile-nav-toggle"></i>
                 </nav>
                 <!-- Navbar -->
-        </div>
+            </div>
         `;
 
     }else{
@@ -38,20 +42,30 @@ window.onload = ()=>{
                 <!-- Navbar -->
                 <nav id="navbar" class="navbar">
                     <ul>
-                        <form action="search.html">
-                            <li><input type="text" id="search" placeholder="Buscar serviços" name="search" style="width: 320px; height: 40px;"></input></li>
-                            <button type="submit" onsubmit="searchData()" id="btn_search" style="width: 50px; height: 40px;"><i class="fa fa-search"></i></button>
-                        </form>
+                        <li>
+                            <form action="search.html">
+                                <input type="text" id="search" placeholder="Buscar serviços" name="search" style="width: 320px; height: 40px;"></input>
+                                <button type="submit" onsubmit="searchData()" id="btn_search" style="width: 50px; height: 40px;"><i class="fa fa-search"></i></button>
+                            </form>
+                        </li>
                         <li><a href="login.html">Login</a></li>
                         <li><a href="cadastro.html">Cadastrar</a></li>
                         <li><a href="sobre.html">Sobre</a></li>
                         <li><a href="servicos.html">Serviços</a></li>
                     </ul>
-                    <i class="bi bi-list mobile-nav-toggle"></i>
+                    <i onclick="mobile()" class="bi bi-list mobile-nav-toggle"></i>
                 </nav>
                 <!-- Navbar -->
             </div>
         `;
     }
     document.querySelector('.header').innerHTML = new_header;
+}
+
+function mobile(){
+    let btn = document.querySelector('.mobile-nav-toggle');
+    
+    document.querySelector('#navbar').classList.toggle('navbar-mobile');
+    btn.classList.toggle('bi-list');
+    btn.classList.toggle('bi-x');
 }

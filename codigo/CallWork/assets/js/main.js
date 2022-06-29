@@ -48,7 +48,7 @@
 
   /* Scroll to header */
   const scrollto = (el) => {
-    let header = select('#header')
+    let header = select('.header')
     let offset = header.offsetHeight
 
     if (!header.classList.contains('header-scrolled')) {
@@ -63,7 +63,7 @@
   }
 
   /* Manter o header on scroll */
-  let selectHeader = select('#header')
+  let selectHeader = select('.header')
   if (selectHeader) {
     const headerScrolled = () => {
       if (window.scrollY > 100) {
@@ -77,11 +77,11 @@
   }
 
   /* Mobile */
-  on('click', '.mobile-nav-toggle', function(e) {
-    select('#navbar').classList.toggle('navbar-mobile')
-    this.classList.toggle('bi-list')
-    this.classList.toggle('bi-x')
-  })
+  // on('click', '.mobile-nav-toggle', function(e) {
+  //   select('#navbar').classList.toggle('navbar-mobile')
+  //   this.classList.toggle('bi-list')
+  //   this.classList.toggle('bi-x')
+  // })
 
   /* Scroll on links */
   on('click', '.scrollto', function(e) {
@@ -118,4 +118,12 @@
     })
   });
 
-})()
+})();
+
+function mobile(){
+  let btn = document.querySelector('.mobile-nav-toggle');
+  
+  document.querySelector('#navbar').classList.toggle('navbar-mobile');
+  btn.classList.toggle('bi-list');
+  btn.classList.toggle('bi-x');
+}

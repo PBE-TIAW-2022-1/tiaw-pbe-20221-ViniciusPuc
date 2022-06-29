@@ -18,10 +18,6 @@ function loadControlPanel(users){
                         <div id="postQtd" class="grid-child-posts">
                             
                         </div>
-                
-                        <div id="workedProfiles" class="grid-child-followers">
-                            
-                        </div>
             
                     </div>
             
@@ -49,18 +45,6 @@ function loadControlPanelPostsQtd(posts){
 function loadControlPanelWorkedJobs(profiles){
     for(let i = 0; i < profiles.length; i++){
         if(profiles[i].id == user_id){
-            stars = '';
-            for(let f = 0; f < profiles[i].stars; f++){
-                stars =  stars + `
-                    <i class="fa fa-star" aria-hidden="true"></i>
-                `;
-            };
-            for(let g = 0; g < (5 - profiles[i].stars); g++){
-                stars = stars + `
-                    <i class="fa fa-star-o" aria-hidden="true"></i>
-                `;
-            };
-            document.getElementById("starRate").innerHTML = stars;
             document.getElementById("workedProfiles").innerHTML = `<p style="text-align: center; "><b>${profiles[i].worked}</b> Concluídos</p>`;
         }
     }
@@ -78,6 +62,10 @@ function loadUserPosts(posts){
             for(let j = 0; j < posts[i].publications.length; j++){
                 //calculando hora da publicação
                 var dtPartida = posts[i].publications[j].date_pub;
+                if (dtPartida.includes(',')){
+                    dtPartida = dtPartida.replace(/,/g, "");
+                }
+                
                 const hoje = new Date();
                 var dtChegada = hoje.toLocaleString();
 
@@ -125,7 +113,6 @@ function requestLoadControlPanel(){
         let users = JSON.parse(this.responseText);
         loadControlPanel(users);
         requestLoadPosts();
-        requestLoadWorked();
     }
     });
 
