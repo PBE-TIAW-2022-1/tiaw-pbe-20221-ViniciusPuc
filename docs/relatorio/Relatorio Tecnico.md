@@ -3,7 +3,7 @@
 
 Guia de Serviços - CALL WORK
 
-`CURSO` teste
+`CURSO`
 
 Sistemas de Informação - PUC Minas
 
